@@ -30,7 +30,7 @@ public class MainActivity extends AppCompatActivity {
     private static String TAG = "phptest";
 
     private EditText mEditTextName;
-    private EditText mEditTextCountry;
+    private EditText mEditTextReview;
     private TextView mTextViewResult;
 
 
@@ -60,7 +60,7 @@ public class MainActivity extends AppCompatActivity {
         setContentView(R.layout.activity_main);
 
         mEditTextName = (EditText)findViewById(R.id.editText_main_name);
-        mEditTextCountry = (EditText)findViewById(R.id.editText_main_country);
+        mEditTextReview = (EditText)findViewById(R.id.editText_main_review);
         mTextViewResult = (TextView)findViewById(R.id.textView_main_result);
 
         mTextViewResult.setMovementMethod(new ScrollingMovementMethod());
@@ -72,14 +72,14 @@ public class MainActivity extends AppCompatActivity {
             public void onClick(View v) {
 
                 String name = mEditTextName.getText().toString();
-                String country = mEditTextCountry.getText().toString();
+                String review = mEditTextReview.getText().toString();
 
                 InsertData task = new InsertData();
-                task.execute("http://" + IP_ADDRESS + "/insert.php", name,country);
+                task.execute("http://" + IP_ADDRESS + "/insert.php", name,review);
 
 
                 mEditTextName.setText("");
-                mEditTextCountry.setText("");
+                mEditTextReview.setText("");
 
             }
         });
@@ -114,10 +114,10 @@ public class MainActivity extends AppCompatActivity {
         protected String doInBackground(String... params) {
 
             String name = (String)params[1];
-            String country = (String)params[2];
+            String review = (String)params[2];
 
             String serverURL = (String)params[0];
-            String postParameters = "name=" + name + "&country=" + country;
+            String postParameters = "name=" + name + "&review=" + review;
 
 
             try {
