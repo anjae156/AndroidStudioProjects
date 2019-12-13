@@ -33,8 +33,6 @@ public class MainActivity extends AppCompatActivity {
                 WindowManager.LayoutParams.FLAG_FULLSCREEN);
 
 
-        출처: https://abc1211.tistory.com/303 [길위의 개발자]
-
         bottomNavigationView = findViewById(R.id.bot_nav);
         bottomNavigationView.setOnNavigationItemSelectedListener(new BottomNavigationView.OnNavigationItemSelectedListener() {
             @Override
