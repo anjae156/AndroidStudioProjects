@@ -1,5 +1,6 @@
 package com.example.an.listpasing;
 import android.app.ProgressDialog;
+import android.content.Intent;
 import android.os.AsyncTask;
 import android.os.Bundle;
 import androidx.appcompat.app.AppCompatActivity;
@@ -8,6 +9,7 @@ import androidx.recyclerview.widget.RecyclerView;
 import android.text.method.ScrollingMovementMethod;
 import android.util.Log;
 import android.view.View;
+import android.widget.AdapterView;
 import android.widget.Button;
 import android.widget.EditText;
 import android.widget.TextView;
@@ -30,16 +32,13 @@ import java.util.ArrayList;
 
 public class MainActivity extends AppCompatActivity {
 
-    private static String IP_ADDRESS = "172.30.1.51";
+    private static String IP_ADDRESS = "192.168.42.41";// 인터넷 바꿀때마다 바꾸기
     private static String TAG = "phptest";
 
-    private EditText mEditTextName;
-    private EditText mEditTextCountry;
     private TextView mTextViewResult;
     private ArrayList<ListData> mArrayList;
     private UsersAdapter mAdapter;
     private RecyclerView mRecyclerView;
-    private EditText mEditTextSearchKeyword;
     private String mJsonString;
 
 
@@ -209,6 +208,7 @@ public class MainActivity extends AppCompatActivity {
 
                 mArrayList.add(listData);
                 mAdapter.notifyDataSetChanged();
+
             }
 
 

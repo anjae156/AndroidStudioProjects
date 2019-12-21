@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "874419792374",
+    "firebase_url": "https://lestview-98181.firebaseio.com",
+    "project_id": "lestview-98181",
+    "storage_bucket": "lestview-98181.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:874419792374:android:e3f5632575917752683fd7",
+        "android_client_info": {
+          "package_name": "com.example.an.restview"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "874419792374-e4pc98vp2lhaghf6d1majnoad5id4588.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.an.restview",
+            "certificate_hash": "e6f5feb5ca063daccfa79a3c58e3a6b5d1062ce2"
+          }
+        },
+        {
+          "client_id": "874419792374-9ithfmc8i2nr60mno96kb3u0hb56nqna.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyB4owBeoJ9i8Fcim1mBtJldaDgGjUR2kaM"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "874419792374-9ithfmc8i2nr60mno96kb3u0hb56nqna.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
